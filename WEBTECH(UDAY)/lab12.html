@@ -1,0 +1,54 @@
+<!--12.Create a striped table using CSS.-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lab12</title>
+    <style>
+        table {
+          border-collapse: collapse;
+          border-spacing: 0;
+          width: 100%;
+          border: 1px solid #60d412;
+        }
+        
+        th, td {
+          text-align: left;
+          padding: 16px;
+        }
+        
+        tr:nth-child(even) {
+          background-color: #d87979;
+        }
+        </style>
+</head>
+<body>
+    <h2>Striped Table</h2>
+
+<table>
+  <tr>
+    <th>First Name</th>
+    <th>Last Name</th>
+    <th>Points</th>
+  </tr>
+  <tr>
+    <td>John</td>
+    <td>Smith</td>
+    <td>80</td>
+  </tr>
+  <tr>
+    <td>Jack</td>
+    <td>Jackson</td>
+    <td>90</td>
+  </tr>
+  <tr>
+    <td>Johnson</td>
+    <td>Reson</td>
+    <td>70</td>
+  </tr>
+</table>
+</body>
+</html>

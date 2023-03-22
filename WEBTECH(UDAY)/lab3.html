@@ -1,0 +1,34 @@
+<!--3.Create a webpage that contains
+-An image of car with height 120px, width 120px and alternative text for image “Cars”
+-Any image that contain client side imagemap that redirects to any page available online.
+-Any image that returns the coordinates of the clicked area to URL (use server side imagemap)-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lab-3</title>
+</head>
+<body>
+    <div>
+        <p><b>Image of Car:</b></p>
+        <img src="car.jpeg" alt="Cars" style="height: 120px;width: 120px;">
+    </div>
+
+    <div>
+        <p><b>Google pag link:</b></p>
+        <a href="https://google.com"><img src="google.png" alt="goole_image" style="width: 150px; height: 150px;"></a>
+    </div>
+
+    <div>
+        <p>Here's an image with a server-side image map:</p>
+        <img src="car.jpeg" usemap="#coords" width="200" height="120>
+        <map name="coords">
+        <area shape="rect" coords="0,0,100,100" href="coordinates.php">
+    </map>
+    </div>
+</body>
+</html>
+

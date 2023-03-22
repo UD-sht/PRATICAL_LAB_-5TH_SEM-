@@ -1,0 +1,30 @@
+<!--13.Create  a link and apply CSS in such way that the links may represents different color for different events. For example, while hovering, it may be displayed in red color, after  visiting the link it may be displayed in yellow, etc.-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lab13</title>
+    <style>
+        a:link {
+          color: rgb(52, 243, 14);
+        }
+        a:visited {
+          color: rgb(64, 18, 231);
+        }
+        a:hover {
+          color: rgb(197, 12, 105);
+        }
+        a:active {
+          color: rgba(195, 0, 255, 0.918);
+        }
+        </style>
+</head>
+<body>
+    <h2>Styling a link depending on state</h2>
+
+<p><b><a href="default.asp" target="_blank">Link</a></b></p>
+</body>
+</html>

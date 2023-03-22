@@ -1,0 +1,51 @@
+<!--7.Design a form in HTML using fieldset and legend that contains the following fields
+-Name as input type –text
+-Address as input type-text
+-A multiline text for Bio
+-A dropdown for address
+-A radio button for gender
+-A file input for identity upload
+-A password type input for contact number
+-A submit button -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lab7</title>
+</head>
+<body>
+    <form>
+        <fieldset style="width: 400px">
+          <legend>Personal Information</legend>
+          <label for="name">Name:</label>&emsp;
+          <input type="text" id="name" name="name" required><br><br>
+          <label for="address">Address:</label>
+          <input type="text" id="address" name="address" required><br><br>
+          <label for="bio">Bio:</label>&emsp;&emsp;
+          <textarea id="bio" name="bio"></textarea><br><br>
+          <label for="city">City:</label>&emsp;&emsp;
+          <select id="city" name="city">
+            <option value="New York">Kathmandu</option>
+            <option value="Los Angeles">Bhaktapur</option>
+            <option value="Chicago">Butwal</option>
+            <option value="Houston">Pokhara</option>
+            <option value="Miami">Jhapa</option>
+          </select><br><br>
+          <label for="gender">Gender:</label>
+          <input type="radio" id="male" name="gender" value="male">
+          <label for="male">Male</label>
+          <input type="radio" id="female" name="gender" value="female">
+          <label for="female">Female</label><br><br>
+          <label for="identity">Identity:</label>
+          <input type="file" id="identity" name="identity" accept=".pdf,.doc,.docx"><br><br>
+          <label for="contact">Contact Number:</label>
+          <input type="password" id="contact" name="contact" required>
+          <br><br>
+          <input type="submit" value="Submit">
+        </fieldset>
+      </form>
+</body>
+</html>
